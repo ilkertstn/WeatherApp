@@ -1,38 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
-}
+  background-image: url("https://images.pexels.com/photos/531767/pexels-photo-531767.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 40px;
+}
+.info-main {
+  position: relative;
+  top: -25px;
+  height: 480px;
+  width: 980px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 10px silver;
+  margin-top: 100px;
+}
+.info {
+  display: flex;
+  justify-content: space-around;
+  width: 75%;
+}
+.info2 {
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  font-size: 72px;
 }
 
-.App-link {
-  color: #61dafb;
+.form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  outline: none;
+  padding: 10px 40px;
+  border-radius: 10px;
+  background-color: white;
+  border: none;
+  width: 450px;
+}
+
+.info2 p {
+  font-size: xx-large;
+}
+.inner-main {
+  position: relative;
+  top: -190px;
+  height: 160px;
+  width: 180px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 10px silver;
+  margin-top: 100px;
+}
+
+.inner-main p {
+  font-size: x-large;
+}
+.inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
