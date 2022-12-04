@@ -22,9 +22,21 @@ export default function Info({ info, state }) {
         ) : null}
       </div>
       <div className="inner">
-        <SmallWeather />
-        <SmallWeather />
-        <SmallWeather />
+        <SmallWeather
+          date={info?.forecast?.forecastday[0].date}
+          icon={info?.forecast?.forecastday[0].day.condition.icon}
+          temperature={info?.forecast?.forecastday[0].day.avgtemp_c}
+        />
+        <SmallWeather
+          date={info?.forecast?.forecastday[1].date}
+          icon={info?.forecast?.forecastday[1].day.condition.icon}
+          temperature={info?.forecast?.forecastday[1].day.avgtemp_c}
+        />
+        <SmallWeather
+          date={info?.forecast?.forecastday[2].date}
+          icon={info?.forecast?.forecastday[2].day.condition.icon}
+          temperature={info?.forecast?.forecastday[2].day.avgtemp_c}
+        />
       </div>
     </div>
   );

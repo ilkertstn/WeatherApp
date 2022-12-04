@@ -1,12 +1,14 @@
 import React from "react";
 
-export default function SmallWeather({ info, state }) {
+export default function SmallWeather({ date, icon, temperature }) {
   return (
     <div>
       <div className="inner-main">
-        <p>Çarşamba</p>
-        <p>image</p>
-        <p>derece</p>
+        <div>
+          <p>{date}</p>
+          <img alt="" src={icon}></img>
+          <p>{temperature}°C</p>
+        </div>
       </div>
     </div>
   );

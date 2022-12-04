@@ -7,7 +7,7 @@ export default function Form({ setInfo, setState }) {
 
   const handleChange = async () => {
     const api = "976dd1215a0d44c9828184833220112";
-    const baseURL = `http://api.weatherapi.com/v1/forecast.json?key=${api}&q=${city}&days=3&lang=tr`;
+    const baseURL = `http://api.weatherapi.com/v1/forecast.json?key=${api}&q=${city}&days=3`;
     await axios.get(baseURL).then((res) => setInfo(res.data));
     setState(true);
   };
@@ -30,7 +30,6 @@ export default function Form({ setInfo, setState }) {
             value={city}
           />
         </div>
-        <div className="btnDiv"></div>
       </form>
     </div>
   );
